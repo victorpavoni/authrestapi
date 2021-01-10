@@ -1,0 +1,35 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Victor",
+  "email": "victor@example.com",
+  "password": "victor1234"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "victor@example.com",
+  "password": "victor1234"
+}
+
+###
+
+GET http://localhost:5000/api/users/list
+Authorization: eyJhbGciOiJIUzI1NiJ9.dmljdG9yQGV4YW1wbGUuY29t.GctpEzNUN2FvEidu--4KLMh9GUL2KGgZyeKCBOc-8TY
+
+###
+
+POST http://localhost:5000/api/users/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiam9uYXRhIiwiZW1haWwiOiJqb25hdGFAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRQUC8vdEF0WGt4WVNVTUlGbG95WTl1OVVGNmpYb2xVUTNKLmF0NkUxQjZpOWMuY2NGMkI0TyIsImlhdCI6MTYwNjE4NTMwN30.s77Pk--x7QyhJfp4qhEfbSQhfzIa-lvfuaJtt_pGIsU
+Content-Type: application/json
+
+{
+  "name": "joao",
+  "email": "joao@example.com",
+  "password": "joao1234"
+}
